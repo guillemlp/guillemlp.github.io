@@ -47,6 +47,9 @@ International Conference / Workshop on Embedded Computer Systems: Architectures,
 * Fast Behavioural RTL Simulation of 10B Transistor SoC Designs with Metro-Mpi
 **Guillem López-Paradís**, Brian Li, Adrià Armejach, Stefan Wallentowitz, Miquel Moretó, Jonathan Balkind
 Design, Automation, and Test in Europe (DATE), April 2023
+* SQuadS: Self-Serve System Services for new Hardware-Software Cooperation
+Workshop on Languages, Tools, and Techniques for Accelerator Design (LATTE), March 2023
+N. Turtayeva, **G. López Paradís**, J. Balkind
 * DVINO: A RISC-V Vector Processor Implemented in 65nm Technology
 G. Cabo, G. Candón, X. Carril, M. Doblas, M. Domínguez, A. González, C. Hernández, V. Jiménez, V. Kostalampros, R. Langarita, N. Leyva, **Guillem López-Paradís**, et al.
 37th Conference on Design of Circuits and Integrated Systems (DCIS), November 2022
