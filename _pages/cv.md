@@ -26,8 +26,8 @@ Work experience
   * Parallelized RTL simulations with MPI (using up to 1024 cores) with speedups of 134×
 * Summer 2018, Google Summer of Code Student with Performance Co‑Pilot (PCP)
   * Added a new functionality into production.
-* 2017-2018, Intern at Xilinx Labs (XLABS)
-  * Studied the scalability of the new Accelerator (ACAP) and in charge of the nighly regression.
+* August 2017 - March 2018, Intern at Xilinx Labs (XLABS)
+  * Studied the scalability of the new Accelerator (ACAP) and in charge of the nighly regression of the simulator.
   
 
 
