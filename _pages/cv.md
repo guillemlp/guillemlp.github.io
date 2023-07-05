@@ -14,6 +14,7 @@ Education
 * Ph.D in Computer Architecture, Polytechnic University of Catalonia (UPC), 2024 (expected)
   * Visiting PhD Student at University of California, Santa Barbara (UCSB), 2022-2023 
   * International Collaborations with Arm and UCSB
+  * 4 month research stage at Univeristy of California, Santa Barbara (UCSB) (Oct 22 - March 23)
 * M.S. in Innovation and Research in Informatics, Polytechnic University of Catalonia (UPC), 2020
   * Specialization in High Performance Computing (HPC)
 * B.S. in Informatics Engineering, Polytechnic University of Catalonia (UPC), 2017
@@ -37,4 +38,7 @@ Publications
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+
+Awards
+======
   
