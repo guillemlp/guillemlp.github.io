@@ -47,6 +47,20 @@ International Conference / Workshop on Embedded Computer Systems: Architectures,
 * Fast Behavioural RTL Simulation of 10B Transistor SoC Designs with Metro-Mpi
 **Guillem López-Paradís**, Brian Li, Adrià Armejach, Stefan Wallentowitz, Miquel Moretó, Jonathan Balkind
 Design, Automation, and Test in Europe (DATE), April 2023
+* DVINO: A RISC-V Vector Processor Implemented in 65nm Technology
+G. Cabo, G. Candón, X. Carril, M. Doblas, M. Domínguez, A. González, C. Hernández, V. Jiménez, V. Kostalampros, R. Langarita, N. Leyva, **Guillem López-Paradís**, et al.
+37th Conference on Design of Circuits and Integrated Systems (DCIS), November 2022
+* Sargantana: A 1 GHz+ In-Order RISC-V Processor with SIMD Vector Extensions in 22nm FD-SOI.
+V. Soria Pardos, M. Doblas, **Guillem López-Paradís**, G. Candón, N. Rodas, X. Carril, P. Fontova-Musté, N. Leyva, S. Marco-Sola, M. Moretó:
+25th Euromicro Conference on Digital System Design (DSD), September 2022
+* Mont-Blanc 2020: Towards Scalable and Power Efficient European HPC Processors
+A. Armejach, B. Brank, J. Cortina, F. Dolique, T. Hayes, N. Ho, Pierre-Axel Lagadec, R. Lemaire, **Guillem López-Paradís**, L. Marliac, M. Moretó, P. Marcuello, D. Pleiter, X. Tan, S. Derradji
+* gem5+rtl: A Framework to Enable RTL Models Inside a Full-System Simulator
+**Guillem López-Paradís**, Adrià Armejach, Miquel Moretó
+50th International Conference on Parallel Processing (ICPP), August 2021
+* An Academic RISC-V Silicon Implementation Based on Open-Source Components
+	J. Abella, C. Bulla, G. Cabo, F. J. Cazorla, A. Cristal, M. Doblas, R. Figueras, A. González, C. Hernández, C. Hernández, V. Jiménez, L. Kosmidis, V. Kostalabros, R. Langarita, N. Leyva, **Guillem López-Paradís**, J. Marimon, R. Martínez, J. Mendoza, F. Moll, M. Moretó, J. Pavón, C. Ramírez, M. Antonio Ramírez, C. Rojas Morales, A. Rubio, A. Ruiz, N. Sönmez, V. Soria, L. Terés, O. S. Unsal, M. Valero, I. Vargas Valdivieso, L. Villa
+
 
 Achivements and awards
 ======
