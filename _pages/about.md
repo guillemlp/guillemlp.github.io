@@ -11,70 +11,57 @@ redirect_from:
 About me 
 ======
 
-I am a PhD student (3rd year) in Computer Architecture at Barcelona Supercomputing Center (BSC) and Polytechnic University of Catalonia (UPC). I focus on mechanisms to  connect coherent hardware accelerators to the memory hierarchy of the CPU. Currently, I have collaborations with industry (Arm), and Academia (UCSB). I have 3 papers at international conferences as first author (ICPP 21, DATE 23, SAMOS 23), and several papers at journals and conferences as co-author (DCIS, DSD, DATE). I received a schoalrship to do the PhD from the catalan governement as well as funding from Arm to do reserach.  
+I am a computer architect specialised in high‑performance computing, RTL simulation scalability, and accelerator‑centric SoC design. I completed my PhD in Computer Architecture (Cum Laude) at BSC–UPC in July 2025, where I focused on coherent accelerator memory systems and large‑scale RTL simulation frameworks such as Metro‑MPI. My work spans collaborations with UCSB, Arm, HM, and multiple EU projects, contributing to open‑source tapeouts and publications at ISCA, DATE, and ICPP.
 
-I am always looking for further collaborations or internships/research stages. My interests include networks, interconnects for accelerators, hardware accelerators, FPGA, RTL Simulation, Simulators, and in general Computer Architecture.
-
-I am currently looking for new RTL projects to be accelerated by Metro-MPI. Metro-MPI is a methodology to speed-up RTL Simulations using MPI. It works particularly well in OpenPiton, obtaining super-linear speeupds with Verilator. You can find more info at: www.github.com/metro-mpi
+I enjoy hardware–software co‑design, ML‑assisted optimisation, and domain‑specific accelerators, with a strong emphasis on efficient data movement. I am open to collaborations on accelerator coherence, RTL simulation, and Metro‑MPI integrations.
 
 Education
 ======
-* Ph.D in Computer Architecture, Polytechnic University of Catalonia (UPC), 2024 (expected)
-  * Visiting PhD Student at University of California, Santa Barbara (UCSB), Oct 22 - March 23 
-  * International Collaborations with Arm and UCSB
-  * 4 month research stage at Univeristy of California, Santa Barbara (UCSB) (Oct 22 - March 23)
-* M.S. in Innovation and Research in Informatics, Polytechnic University of Catalonia (UPC), 2020
-  * Specialization in High Performance Computing (HPC)
-* B.S. in Informatics Engineering, Polytechnic University of Catalonia (UPC), 2017
-  * BSc mobility exchange, Ecole Polytechnique Federale De Lausanne (EPFL) , 2017
+* Ph.D in Computer Architecture (Cum Laude), Polytechnic University of Catalonia (UPC), July 2025  
+  * Title: Efficient Data Movement in Large‑Scale Heterogeneous Systems  
+  * Advisors: Dr. Adrià Armejach & Prof. Miquel Moretó; collaborators: Prof. Jonathan Balkind (UCSB) & Dr. Balaji Venu (Arm)  
+  * Contributions: scalable RTL simulation (Metro‑MPI), coherent accelerator memory subsystems, optimisations for OpenPiton, and open‑source RISC‑V tapeouts  
+* Visiting Scholar, University of California, Santa Barbara (UCSB), Oct 2023 – Feb 2024 & Nov 2024 – May 2025  
+  * Research on accelerator coherence and communication fabrics; co‑developed Data Centre HyperLoops (ISCA’24 co‑first author)  
+* M.S. in Innovation and Research in Informatics (HPC), Polytechnic University of Catalonia (UPC), 2020  
+* B.S. in Informatics Engineering, Polytechnic University of Catalonia (UPC), 2017  
+  * BSc mobility exchange, Ecole Polytechnique Federale De Lausanne (EPFL), 2017 (honors in final RTL accelerator project)
 
-Work experience
+Experience (Academia & Industry)
 ======
-* Summer 2021, Google Summer of Code Student with Fossi Foundation
-  * Parallelized RTL simulations with MPI (using up to 1024 cores) with speedups of 134×
-* Summer 2018, Google Summer of Code Student with Performance Co‑Pilot (PCP)
-  * Added a new functionality into production.
-* August 2017 - March 2018, Intern at Xilinx Labs (XLABS)
-  * Studied the scalability of the new Accelerator (ACAP) and in charge of the nighly regression of the simulator.
-  
-
+* PhD Researcher, Barcelona Supercomputing Center (BSC), May 2021 – July 2025  
+  * Designed coherent accelerator memory subsystems and contributed to multiple open‑source RISC‑V tapeouts  
+  * Co‑developed Data Centre HyperLoops, achieving 114.8×–646.4× faster data movement than a 400 Gbps optical network  
+  * Advanced large‑scale simulation workflows through Metro‑MPI and gem5‑based infrastructures; collaborations with EPI, DRAC, MEEP, Arm CoE, Intel, UCSB, and HM  
+* Research Master Student, Barcelona Supercomputing Center (BSC), March 2018 – April 2021  
+  * MSc thesis: Towards the Simulation and Emulation of Large‑Scale Hardware Designs; integrated RTL models into gem5 (gem5+RTL, ICPP ’21)  
+* Google Summer of Code — Mentor (2025) & Student (2021, 2018), Google Summer of Code  
+  * Mentored the automatisation of Metro‑MPI; parallelised RTL simulations with MPI (up to 1024 cores, 134× speedup, DATE ’23); delivered production features for PCP  
+* Intern, Xilinx Labs (XLABS), Dublin, August 2017 – February 2018  
+  * Analysed accelerator scalability on emerging FPGA architectures and maintained nightly regression for the simulator  
+* Undergraduate Researcher (EU Project RoMoL), Barcelona Supercomputing Center (BSC), July 2016 – February 2017  
+  * Integrated the Ramulator memory simulator into TaskSim; awarded the Spanish Ministry Beca de Colaboración
 
 Publications
 ======
-* Characterization of a coherent hardware accelerator framework for SoCs  
-**Guillem López-Paradís**, Balaji Venu, Adrià Armejach, Miquel Moreto  
-International Conference / Workshop on Embedded Computer Systems: Architectures, Modeling and Simulation (SAMOS), July 2023
-* Fast Behavioural RTL Simulation of 10B Transistor SoC Designs with Metro-Mpi  
-**Guillem López-Paradís**, Brian Li, Adrià Armejach, Stefan Wallentowitz, Miquel Moretó, Jonathan Balkind  
-Design, Automation, and Test in Europe (DATE), April 2023
-* SQuadS: Self-Serve System Services for new Hardware-Software Cooperation  
-N. Turtayeva, **G. López Paradís**, J. Balkind  
-Workshop on Languages, Tools, and Techniques for Accelerator Design (LATTE), March 2023
-* DVINO: A RISC-V Vector Processor Implemented in 65nm Technology  
-G. Cabo, G. Candón, X. Carril, M. Doblas, M. Domínguez, A. González, C. Hernández, V. Jiménez, V. Kostalampros, R. Langarita, N. Leyva, **Guillem López-Paradís**, et al.  
-37th Conference on Design of Circuits and Integrated Systems (DCIS), November 2022
-* Sargantana: A 1 GHz+ In-Order RISC-V Processor with SIMD Vector Extensions in 22nm FD-SOI  
-V. Soria Pardos, M. Doblas, **Guillem López-Paradís**, G. Candón, N. Rodas, X. Carril, P. Fontova-Musté, N. Leyva, S. Marco-Sola, M. Moretó  
-25th Euromicro Conference on Digital System Design (DSD), September 2022
-* Mont-Blanc 2020: Towards Scalable and Power Efficient European HPC Processors  
-A. Armejach, B. Brank, J. Cortina, F. Dolique, T. Hayes, N. Ho, Pierre-Axel Lagadec, R. Lemaire, **Guillem López-Paradís**, L. Marliac, M. Moretó, P. Marcuello, D. Pleiter, X. Tan, S. Derradji  
-* gem5+rtl: A Framework to Enable RTL Models Inside a Full-System Simulator  
-**Guillem López-Paradís**, Adrià Armejach, Miquel Moretó  
-50th International Conference on Parallel Processing (ICPP), August 2021
-* An Academic RISC-V Silicon Implementation Based on Open-Source Components  
-J. Abella, C. Bulla, G. Cabo, F. J. Cazorla, A. Cristal, M. Doblas, R. Figueras, A. González, C. Hernández, C. Hernández, V. Jiménez, L. Kosmidis, V. Kostalabros, R. Langarita, N. Leyva, **Guillem López-Paradís**, J. Marimon, R. Martínez, J. Mendoza, F. Moll, M. Moretó, J. Pavón, C. Ramírez, M. Antonio Ramírez, C. Rojas Morales, A. Rubio, A. Ruiz, N. Sönmez, V. Soria, L. Terés, O. S. Unsal, M. Valero, I. Vargas Valdivieso, L. Villa  
-XXXV Conference on Design of Circuits and Integrated Systems (DCIS), November 2020
+* The Case For Data Centre HyperLoops — Co‑first author, ISCA 2024  
+* Characterization of a Coherent Hardware Accelerator Framework for SoCs — First author, SAMOS 2023  
+* Fast Behavioural RTL Simulation of 10B Transistor SoC Designs with Metro‑MPI — First author, DATE 2023  
+* gem5+rtl: A Framework to Enable RTL Models Inside a Full‑System Simulator — First author, ICPP 2021  
+* Co‑author papers at NoCArc’23, DSD’22, DATE’21, and multiple posters (ACACES, DAC, OSDA)
 
-Achivements and awards
+Achievements and awards
 ======
-* DAC Young Fellow, 2023
-* Mobility grant from BSC, 2022
-* PhD grant FI, 2021
-* GSoC Student 2021
-* Nacho Navarro grant, 2019
-* Participated in more than 15 hackathons (3rd prize in Hack the Burgh and Octocat Prize, finalist team in Copenhacks), 2018
-* GSoC Student 2018
-* Undergrad Research grant (Beca de Colaboración), 2017
-* Accepted at the most prestigious start‑up program led by Santander bank for undergrads
-* Involved in different associations during the Bachelor and Master at UPC, including HackUPC, 2015-2018
-* Grant for the best 16 years‑old students of the Valencian region in order to discover the research world at Polytechnic University of Valencia (UPV), 2012
+* Secured competitive grants from undergrad to PhD level (∼ €90K), including FI Fellowship, NGI Fellowship, Severo Ochoa, and mobility awards  
+* PC member (ISCA’26, CF’26); reviewer for IPDPS’24, WOSET’24, LATTE’24, ICPP’23/’22, DATE’21; volunteer at RISCV Summit and FPL  
+* DAC Young Fellow 2023 and 2nd place in “Presenting the PhD thesis in 4 minutes” (UPC, 2024)  
+* Google Summer of Code student (2018, 2021) and mentor (2025); participated in 15+ hackathons with awards (GitHub Octocat Prize, Hack the Burgh 3rd place, finalist at Copenhacks)  
+* Start‑up experience (Forestal e‑bike): led comms between bike hardware and mobile app; accepted to Santander undergrad start‑up program  
+* Beca de Colaboración (Spanish Ministry undergraduate research grant), 2017
+
+Skills and interests
+======
+* Programming: C/C++, Python (ggplot, numpy, matplotlib), Verilog/SystemVerilog, VHDL, Assembly, Bash, Java, JavaScript  
+* Tools: Linux, git/GitLab CI, Verilator, Vivado, ModelSim, GHDL, VCS, gem5, Ramulator; Xilinx FPGAs  
+* Interests: climbing (bouldering 8a/V11), skiing, mountaineering, table tennis (federated national level)  
+* Languages: Catalan (native), Spanish (native), English (advanced), French (basic)

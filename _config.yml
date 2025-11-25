@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Guillem López Paradís"
 title_separator          : "-"
 name                     : &name "Guillem López Paradís"
-description              : &description "PhD student in Computer Architecture at BSC"
+description              : &description "Computer architect focused on coherent accelerators and scalable RTL simulation (Metro-MPI)"
 url                      : https://guillemlp.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "guillemlp/guillemlp.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "GuillemLP"
   avatar           : "profile.jpg"
-  bio              : "PhD student at BSC"
+  bio              : "Computer architect (PhD, BSC–UPC) working on coherent accelerators and scalable RTL simulation"
   location         : "Barcelona, Spain"
-  employer         : BSC & UPC
+  employer         : "BSC–UPC (PhD completed Jul 2025)"
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=ookFZsQAAAAJ&hl=en"
-  email            : "guillem.lopez@bsc.es"
+  email            : "guillem.lopez.paradis@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
