@@ -176,7 +176,7 @@ kramdown:
 # Collections
 collections:
   research:
-    output: true
+    output: false   # pages drafted but not yet built; flip back to true once reviewed
     permalink: /research/:path/
   teaching:
     output: true

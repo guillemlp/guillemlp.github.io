@@ -14,53 +14,11 @@ redirect_from:
   <p class="hero__lede">Postdoctoral researcher and research lead at the Barcelona Supercomputing Center (BSC). I build accelerator-coherent memory systems and the simulation tooling that makes billion-transistor SoCs analysable.</p>
   <p class="hero__cta">
     <a class="btn btn--primary" href="/files/cv_guillem_lopez_paradis.pdf"><i class="fas fa-file-pdf"></i> Download CV</a>
-    <a class="btn btn--ghost" href="/research/"><i class="fas fa-flask"></i> Research</a>
+    <a class="btn btn--ghost" href="/publications/"><i class="fas fa-graduation-cap"></i> Publications</a>
     <a class="btn btn--ghost" href="https://scholar.google.com/citations?user=ookFZsQAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
     <a class="btn btn--ghost" href="https://github.com/guillemlp"><i class="fab fa-github"></i> GitHub</a>
   </p>
 </section>
-
-Selected research
-======
-
-<ul class="cards" markdown="0">
-  <li class="card">
-    <span class="card__tag">ISCA ’24</span>
-    <h3 class="card__title"><a href="/research/hyperloops/">Data Centre HyperLoops</a></h3>
-    <p class="card__desc">Accelerator-coherent inter-chip fabric delivering 114×–646× faster data movement than 400 Gbps optical networks for ML workloads in hyperscale environments.</p>
-    <p class="card__meta">Co-first author · UCSB collaboration</p>
-  </li>
-  <li class="card">
-    <span class="card__tag">DATE ’23</span>
-    <h3 class="card__title"><a href="/research/metro-mpi/">Metro-MPI</a></h3>
-    <p class="card__desc">Distributed RTL simulation parallelising behavioural Verilator with MPI — 1,024 cores, 134× speedup, billion-transistor SoCs become tractable.</p>
-    <p class="card__meta">First author · Open source</p>
-  </li>
-  <li class="card">
-    <span class="card__tag">SAMOS ’23</span>
-    <h3 class="card__title"><a href="/research/acai/">Coherent accelerator framework</a></h3>
-    <p class="card__desc">Characterisation of Arm’s coherent accelerator framework (ACAI) on SoCs, analysing the design trade-offs of accelerator-side coherence.</p>
-    <p class="card__meta">First author · Arm collaboration</p>
-  </li>
-  <li class="card">
-    <span class="card__tag">ICPP ’21</span>
-    <h3 class="card__title"><a href="/research/gem5-rtl/">gem5 + RTL</a></h3>
-    <p class="card__desc">Framework that drops RTL models into the gem5 full-system simulator, enabling hardware–software co-simulation across the stack.</p>
-    <p class="card__meta">First author · Open source</p>
-  </li>
-  <li class="card">
-    <span class="card__tag">2025 — New direction</span>
-    <h3 class="card__title"><a href="/research/llm-hardware/">LLM-driven hardware design</a></h3>
-    <p class="card__desc">Agent-driven workflows for automated RTL generation, architectural exploration, and hardware–software co-design.</p>
-    <p class="card__meta">Ongoing · BSC research lead</p>
-  </li>
-  <li class="card">
-    <span class="card__tag">RISC-V</span>
-    <h3 class="card__title">Open-source tape-outs</h3>
-    <p class="card__desc">Contributor to multiple BSC academic RISC-V SoC tape-outs: Sargantana (22nm FD-SOI), DVINO (65nm), and earlier open-source silicon.</p>
-    <p class="card__meta">DSD ’22 · DCIS ’20 / ’22 / ’23</p>
-  </li>
-</ul>
 
 About me
 ======
