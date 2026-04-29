@@ -1,0 +1,449 @@
+/* ==========================================================================
+   Custom additions — theme tokens, hero, cards, timeline, sidebar, dark mode
+   ========================================================================== */
+
+/*
+   Theme tokens (CSS custom properties)
+   Light mode is the default. Dark mode is opt-in via [data-theme="dark"]
+   on <html>; the inline script in head/custom.html sets it before paint.
+*/
+:root {
+  --c-bg:           #ffffff;
+  --c-text:         #494e52;
+  --c-text-muted:   #808386;
+  --c-heading:      #2d3338;
+  --c-primary:      #0f766e;
+  --c-primary-soft: #e2efee;
+  --c-border:       #e7eaec;
+  --c-card-bg:      #ffffff;
+  --c-card-shadow:  rgba(15, 23, 42, 0.08);
+  --c-masthead-bg:  rgba(255, 255, 255, 0.95);
+  --c-code-bg:      #f5f7f8;
+}
+
+[data-theme="dark"] {
+  --c-bg:           #0f1419;
+  --c-text:         #cbd5e1;
+  --c-text-muted:   #94a3b8;
+  --c-heading:      #f1f5f9;
+  --c-primary:      #2dd4bf;
+  --c-primary-soft: rgba(45, 212, 191, 0.14);
+  --c-border:       #1e293b;
+  --c-card-bg:      #151b23;
+  --c-card-shadow:  rgba(0, 0, 0, 0.45);
+  --c-masthead-bg:  rgba(15, 20, 25, 0.92);
+  --c-code-bg:      #0b1117;
+}
+
+/* ----- Apply tokens to existing theme surfaces ----- */
+
+html {
+  background: var(--c-bg);
+}
+
+body {
+  color: var(--c-text);
+  background: var(--c-bg);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+a { color: var(--c-primary); }
+a:visited { color: var(--c-primary); }
+a:hover { color: var(--c-primary); }
+
+.masthead {
+  background: var(--c-masthead-bg);
+  border-bottom: 1px solid var(--c-border);
+  backdrop-filter: saturate(140%) blur(8px);
+}
+
+.masthead__menu .site-title,
+.greedy-nav a { color: var(--c-heading); }
+.greedy-nav a:hover { color: var(--c-primary); }
+
+.greedy-nav { background: transparent; }
+.greedy-nav .visible-links a:before { background: var(--c-primary); }
+
+.page__footer {
+  background: var(--c-bg);
+  border-top: 1px solid var(--c-border);
+  color: var(--c-text-muted);
+}
+.page__footer a { color: var(--c-primary); }
+
+.page__content code,
+.page__content pre {
+  background: var(--c-code-bg);
+}
+
+hr { border-color: var(--c-border); }
+
+/* Headings inside the long page__content list */
+.page__content > h1,
+.page__content > h2 {
+  margin-top: 1.6em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--c-border);
+  color: var(--c-heading);
+  font-weight: 600;
+}
+.page__content > h1 { font-size: $type-size-3; }
+.page__content > h2 { font-size: $type-size-4; }
+.page__content h3 { color: var(--c-heading); }
+
+/* ----- Theme toggle button (floating top-right) ----- */
+
+.theme-toggle {
+  position: fixed;
+  top: 0.6em;
+  right: 0.8em;
+  z-index: 100;
+  width: 2.4em;
+  height: 2.4em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: var(--c-card-bg);
+  color: var(--c-text);
+  border: 1px solid var(--c-border);
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1em;
+  line-height: 1;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--c-primary);
+    border-color: var(--c-primary);
+    transform: scale(1.05);
+  }
+
+  .theme-toggle__icon { display: inline-block; }
+  .theme-toggle__sun  { display: inline-block; }
+  .theme-toggle__moon { display: none; }
+}
+[data-theme="dark"] .theme-toggle .theme-toggle__sun  { display: none; }
+[data-theme="dark"] .theme-toggle .theme-toggle__moon { display: inline-block; }
+
+/* ----- Sidebar polish (bigger circular avatar, tight icon row) ----- */
+
+.author__avatar {
+  img {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 0;
+    box-shadow: 0 4px 16px var(--c-card-shadow);
+    @include breakpoint($large) {
+      padding: 0;
+      border: 0;
+    }
+  }
+}
+
+.author__name {
+  margin-top: 0.8em;
+  font-weight: 600;
+  color: var(--c-heading);
+}
+
+.author__bio {
+  color: var(--c-text-muted);
+  font-size: $type-size-6;
+  line-height: 1.45;
+}
+
+/* Override the popover behaviour from _sidebar.scss — we keep the lists
+   visible inline on every viewport and style them ourselves. */
+.author__urls-wrapper { cursor: default; }
+.author__urls-wrapper > button { display: none !important; }
+
+.author__urls.is--info,
+.author__urls.is--icons {
+  position: static !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  list-style: none;
+
+  &:before, &:after { display: none !important; }
+}
+
+.author__urls.is--info {
+  display: block !important;
+  font-size: $type-size-6;
+  margin: 0 0 0.4em;
+
+  li {
+    color: var(--c-text-muted);
+    margin-bottom: 0.25em;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  i { color: var(--c-text-muted); margin-right: 0.3em; }
+}
+
+.author__urls.is--icons {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 0.5em 0 0.5em;
+  padding: 0.6em 0 0;
+  border-top: 1px solid var(--c-border);
+
+  li {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+  li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.1em;
+    height: 2.1em;
+    border-radius: 50%;
+    background: var(--c-primary-soft);
+    color: var(--c-primary) !important;
+    font-size: 0.95em;
+    transition: $global-transition;
+    text-decoration: none;
+    &:hover {
+      background: var(--c-primary);
+      color: #fff !important;
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+    .label { display: none; }
+  }
+}
+
+/* ----- Hero block on landing page ----- */
+
+.hero {
+  margin: 0 0 2em;
+  padding: 1.75em 0 1.25em;
+  border-bottom: 1px solid var(--c-border);
+
+  .hero__name {
+    margin: 0 0 0.15em;
+    font-family: $sans-serif;
+    font-weight: 700;
+    font-size: $type-size-2;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--c-heading);
+    overflow-wrap: break-word;
+    hyphens: auto;
+
+    @include breakpoint($medium) {
+      font-size: $type-size-1;
+    }
+  }
+
+  .hero__tagline {
+    margin: 0 0 1em;
+    font-size: $type-size-4;
+    color: var(--c-primary);
+    font-weight: 500;
+  }
+
+  .hero__lede {
+    margin: 0 0 1.4em;
+    max-width: 42em;
+    font-size: $type-size-5;
+    line-height: 1.55;
+    color: var(--c-text);
+  }
+
+  .hero__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 0;
+
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4em;
+      padding: 0.55em 1em;
+      font-size: $type-size-6;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      border-radius: $border-radius;
+      text-decoration: none;
+      transition: $global-transition;
+    }
+
+    a.btn--primary {
+      background: var(--c-primary);
+      color: #fff !important;
+      &:hover {
+        filter: brightness(0.92);
+        color: #fff !important;
+      }
+    }
+
+    a.btn--ghost {
+      background: transparent !important;
+      color: var(--c-primary) !important;
+      border: 1px solid var(--c-primary) !important;
+      &:hover {
+        background: var(--c-primary) !important;
+        color: var(--c-bg) !important;
+      }
+    }
+  }
+}
+
+/* ----- Highlight cards (research / projects) ----- */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  gap: 1em;
+  margin: 0 0 2em;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.1em 1.2em;
+  background: var(--c-card-bg);
+  border: 1px solid var(--c-border);
+  border-radius: $border-radius;
+  transition: $global-transition;
+
+  &:hover {
+    border-color: var(--c-primary);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px var(--c-card-shadow);
+  }
+
+  .card__tag {
+    display: inline-block;
+    align-self: flex-start;
+    margin-bottom: 0.5em;
+    padding: 0.15em 0.6em;
+    background: var(--c-primary-soft);
+    color: var(--c-primary);
+    border-radius: 999px;
+    font-size: $type-size-7;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .card__title {
+    margin: 0 0 0.4em;
+    font-size: $type-size-5;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--c-heading);
+  }
+
+  .card__desc {
+    margin: 0 0 0.8em;
+    font-size: $type-size-6;
+    line-height: 1.5;
+    color: var(--c-text);
+  }
+
+  .card__meta {
+    margin-top: auto;
+    font-size: $type-size-7;
+    color: var(--c-text-muted);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+}
+
+/* ----- CV-style timeline (Education / Experience) ----- */
+
+.cv-list {
+  margin: 0 0 1.6em;
+  padding: 0;
+  list-style: none;
+}
+
+.cv-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.2em 1em;
+  padding: 1em 0;
+  border-bottom: 1px solid var(--c-border);
+
+  @include breakpoint($medium) {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  &:last-child { border-bottom: 0; }
+
+  .cv-item__title {
+    margin: 0;
+    font-size: $type-size-5;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--c-heading);
+  }
+
+  .cv-item__sub {
+    margin: 0.2em 0 0.4em;
+    font-size: $type-size-6;
+    color: var(--c-text-muted);
+  }
+
+  .cv-item__date {
+    grid-row: auto;
+    margin: 0.2em 0 0;
+    font-family: $monospace;
+    font-size: $type-size-7;
+    color: var(--c-text-muted);
+    white-space: nowrap;
+
+    @include breakpoint($medium) {
+      grid-column: 2;
+      grid-row: 1 / span 3;
+      text-align: right;
+      align-self: start;
+      padding-top: 0.4em;
+    }
+  }
+
+  .cv-item__bullets {
+    grid-column: 1 / -1;
+    margin: 0.4em 0 0;
+    padding-left: 1.2em;
+    font-size: $type-size-6;
+    line-height: 1.55;
+    color: var(--c-text);
+
+    li { margin-bottom: 0.25em; }
+  }
+}
+
+/* ----- Dark-mode component overrides for things hardcoded in the theme ----- */
+
+[data-theme="dark"] {
+  .author__avatar img { box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6); }
+
+  .btn { color: #fff !important; }
+
+  .hero .hero__cta a.btn--ghost:hover {
+    color: #0f1419 !important;
+  }
+
+  /* Quote/blockquote, kbd, etc. */
+  blockquote {
+    color: var(--c-text-muted);
+    border-left-color: var(--c-primary);
+  }
+}
