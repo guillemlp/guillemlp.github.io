@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page research-page" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | strip_html | strip_newlines | escape_once }}">{% endif %}
+
+    <div class="page__inner-wrap">
+      <header class="research-page__header">
+        <p class="research-page__breadcrumb">
+          <a href="{{ '/research/' | relative_url }}">← Research</a>
+        </p>
+        {% if page.tag %}
+          <span class="research-page__tag">{{ page.tag }}</span>
+        {% endif %}
+        <h1 class="research-page__title">{{ page.title }}</h1>
+        {% if page.tagline %}<p class="research-page__tagline">{{ page.tagline }}</p>{% endif %}
+
+        <ul class="research-page__meta" markdown="0">
+          {% if page.role %}<li><strong>Role</strong> {{ page.role }}</li>{% endif %}
+          {% if page.venue %}<li><strong>Venue</strong> {{ page.venue }}</li>{% endif %}
+          {% if page.year %}<li><strong>Year</strong> {{ page.year }}</li>{% endif %}
+          {% if page.status %}<li><strong>Status</strong> {{ page.status }}</li>{% endif %}
+          {% if page.collaborators %}<li><strong>Collaborators</strong> {{ page.collaborators }}</li>{% endif %}
+        </ul>
+
+        {% if page.paperurl or page.code or page.slides or page.video or page.bibtex %}
+        <ul class="research-page__links" markdown="0">
+          {% if page.paperurl %}<li><a class="btn btn--ghost" href="{{ page.paperurl }}"><i class="fas fa-file-pdf"></i> Paper</a></li>{% endif %}
+          {% if page.code %}<li><a class="btn btn--ghost" href="{{ page.code }}"><i class="fab fa-github"></i> Code</a></li>{% endif %}
+          {% if page.slides %}<li><a class="btn btn--ghost" href="{{ page.slides }}"><i class="fas fa-display"></i> Slides</a></li>{% endif %}
+          {% if page.video %}<li><a class="btn btn--ghost" href="{{ page.video }}"><i class="fas fa-video"></i> Talk</a></li>{% endif %}
+        </ul>
+        {% endif %}
+      </header>
+
+      <section class="page__content research-page__body" itemprop="text">
+        {{ content }}
+
+        {% if page.bibtex %}
+          <h2 id="cite">Cite</h2>
+          <pre class="bibtex"><code>{{ page.bibtex }}</code></pre>
+        {% endif %}
+      </section>
+
+      <footer class="research-page__footer">
+        <a class="btn btn--ghost" href="{{ '/research/' | relative_url }}">← All research</a>
+      </footer>
+    </div>
+  </article>
+</div>

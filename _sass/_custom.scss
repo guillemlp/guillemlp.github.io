@@ -91,40 +91,50 @@ hr { border-color: var(--c-border); }
 .page__content > h2 { font-size: $type-size-4; }
 .page__content h3 { color: var(--c-heading); }
 
-/* ----- Theme toggle button (floating top-right) ----- */
+/* ----- Theme toggle button (lives inside .masthead__menu next to the nav) ----- */
 
-.theme-toggle {
-  position: fixed;
-  top: 0.6em;
-  right: 0.8em;
-  z-index: 100;
-  width: 2.4em;
-  height: 2.4em;
+.masthead__menu {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.masthead__menu .greedy-nav {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.masthead__menu > .theme-toggle {
+  flex: 0 0 auto;
+  width: 2em;
+  height: 2em;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  background: var(--c-card-bg);
-  color: var(--c-text);
+  margin: 0 0.4em 0 0;
+  background: transparent;
+  color: var(--c-text-muted);
   border: 1px solid var(--c-border);
   border-radius: 50%;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 0.95em;
   line-height: 1;
   transition: all 0.2s ease;
 
   &:hover {
     color: var(--c-primary);
     border-color: var(--c-primary);
-    transform: scale(1.05);
+    background: var(--c-primary-soft);
   }
 
   .theme-toggle__icon { display: inline-block; }
   .theme-toggle__sun  { display: inline-block; }
   .theme-toggle__moon { display: none; }
 }
-[data-theme="dark"] .theme-toggle .theme-toggle__sun  { display: none; }
-[data-theme="dark"] .theme-toggle .theme-toggle__moon { display: inline-block; }
+
+[data-theme="dark"] .masthead__menu > .theme-toggle .theme-toggle__sun  { display: none; }
+[data-theme="dark"] .masthead__menu > .theme-toggle .theme-toggle__moon { display: inline-block; }
 
 /* ----- Sidebar polish (bigger circular avatar, tight icon row) ----- */
 
@@ -428,6 +438,222 @@ hr { border-color: var(--c-border); }
 
     li { margin-bottom: 0.25em; }
   }
+}
+
+/* ----- Research index lede ----- */
+
+.page__lede {
+  margin: 0 0 2em;
+  padding: 0;
+  font-size: $type-size-4;
+  line-height: 1.55;
+  color: var(--c-text);
+  max-width: 48em;
+
+  strong {
+    color: var(--c-heading);
+    font-weight: 600;
+  }
+}
+
+/* ----- Compact card variant for "Recent" landing strip ----- */
+
+.cards--compact {
+  grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+
+  .card {
+    padding: 0.9em 1em;
+    .card__title { font-size: $type-size-6; }
+    .card__desc  { font-size: $type-size-7; line-height: 1.45; }
+  }
+}
+
+/* ----- Research project page ----- */
+
+.research-page {
+  &__header {
+    margin: 0 0 2em;
+    padding: 0 0 1.5em;
+    border-bottom: 1px solid var(--c-border);
+  }
+
+  &__breadcrumb {
+    margin: 0 0 1em;
+    font-size: $type-size-6;
+    a {
+      color: var(--c-text-muted);
+      text-decoration: none;
+      &:hover { color: var(--c-primary); }
+    }
+  }
+
+  &__tag {
+    display: inline-block;
+    margin: 0 0 0.6em;
+    padding: 0.2em 0.7em;
+    background: var(--c-primary-soft);
+    color: var(--c-primary);
+    border-radius: 999px;
+    font-size: $type-size-7;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 0 0 0.3em;
+    font-size: $type-size-1;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--c-heading);
+    line-height: 1.1;
+  }
+
+  &__tagline {
+    margin: 0 0 1.4em;
+    max-width: 40em;
+    font-size: $type-size-4;
+    color: var(--c-primary);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  &__meta {
+    list-style: none;
+    margin: 0 0 1.2em;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em 1.2em;
+    font-size: $type-size-6;
+    color: var(--c-text-muted);
+
+    li { margin: 0; padding: 0; }
+    strong {
+      display: inline-block;
+      margin-right: 0.3em;
+      font-weight: 600;
+      color: var(--c-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: $type-size-7;
+    }
+  }
+
+  &__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+
+    li { margin: 0; padding: 0; }
+    a.btn {
+      font-size: $type-size-6;
+      padding: 0.45em 0.9em;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4em;
+    }
+  }
+
+  &__body {
+    figure {
+      margin: 1.6em 0;
+      text-align: center;
+
+      img, svg {
+        max-width: 100%;
+        height: auto;
+        border-radius: $border-radius;
+      }
+      figcaption {
+        margin-top: 0.6em;
+        font-size: $type-size-7;
+        color: var(--c-text-muted);
+        font-style: italic;
+      }
+    }
+
+    h2 {
+      margin-top: 1.8em;
+      font-size: $type-size-3;
+      color: var(--c-heading);
+    }
+
+    .results {
+      list-style: none;
+      margin: 1em 0 1.6em;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+      gap: 0.8em;
+
+      li {
+        margin: 0;
+        padding: 1em;
+        background: var(--c-card-bg);
+        border: 1px solid var(--c-border);
+        border-radius: $border-radius;
+        text-align: left;
+
+        .results__num {
+          display: block;
+          font-family: $monospace;
+          font-size: $type-size-2;
+          font-weight: 700;
+          line-height: 1;
+          color: var(--c-primary);
+          margin-bottom: 0.2em;
+        }
+        .results__label {
+          font-size: $type-size-7;
+          color: var(--c-text-muted);
+          line-height: 1.35;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    margin: 3em 0 0;
+    padding: 1.5em 0 0;
+    border-top: 1px solid var(--c-border);
+  }
+}
+
+.bibtex {
+  background: var(--c-code-bg);
+  color: var(--c-text);
+  border: 1px solid var(--c-border);
+  padding: 1em 1.2em;
+  border-radius: $border-radius;
+  overflow-x: auto;
+  font-size: $type-size-7;
+  line-height: 1.5;
+}
+
+/* ----- Inline diagram polish (light/dark adapt) ----- */
+
+.diagram {
+  width: 100%;
+  height: auto;
+  background: var(--c-card-bg);
+  border: 1px solid var(--c-border);
+  border-radius: $border-radius;
+  padding: 1em;
+
+  text {
+    font-family: $sans-serif;
+    fill: var(--c-text);
+  }
+  .d-stroke { stroke: var(--c-border); fill: none; }
+  .d-primary { stroke: var(--c-primary); fill: var(--c-primary-soft); }
+  .d-primary-fill { fill: var(--c-primary); }
+  .d-muted { fill: var(--c-text-muted); }
+  .d-text { fill: var(--c-heading); }
+  .d-arrow { stroke: var(--c-primary); fill: none; stroke-width: 1.5; marker-end: url(#arr); }
 }
 
 /* ----- Dark-mode component overrides for things hardcoded in the theme ----- */
