@@ -1,8 +1,9 @@
 ---
 title: "The Case For Data Centre HyperLoops"
 collection: publications
+role: 'Co-first author'
 permalink: /publication/2024-06-01-hyperloops
-excerpt: 'Co-first author ISCA’24 work on accelerator-coherent data movement fabrics achieving 114.8×–646.4× over a 400 Gbps optical network.'
+excerpt: 'Data Centre HyperLoops move a 29 PB ML dataset 115–646× faster and with 1.6–376× less energy than 400 Gbps optical networks.'
 date: 2024-06-01
 venue: 'ISCA 2024'
 paperurl: 'https://doi.org/10.1109/ISCA59077.2024.00026'
