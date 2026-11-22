@@ -14,7 +14,7 @@ redirect_from:
 </p>
 
 <p class="cv-actions" markdown="0">
-  <a class="btn btn--primary" href="{{ base_path }}/files/cv_guillem_lopez_paradis.pdf"><i class="fas fa-file-pdf"></i> Download CV (PDF)</a>
+  <a class="btn btn--primary" href="{{ base_path }}/files/Guillem_Lopez_Paradis_CV.pdf"><i class="fas fa-file-pdf"></i> Download CV (PDF)</a>
 </p>
 
 Experience

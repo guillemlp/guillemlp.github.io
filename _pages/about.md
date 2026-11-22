@@ -14,7 +14,7 @@ redirect_from:
   <p class="hero__tagline">SoC architecture, coherent accelerator integration, and RISC-V manycores.</p>
   <p class="hero__lede">Postdoctoral researcher and research lead at the Barcelona Supercomputing Center (BSC). I design RTL microarchitecture for accelerator-rich RISC-V SoCs, take it to silicon and FPGA, and build the simulation tooling that makes billion-transistor designs tractable.</p>
   <p class="hero__cta">
-    <a class="btn btn--primary" href="/files/cv_guillem_lopez_paradis.pdf"><i class="fas fa-file-pdf"></i> Download CV</a>
+    <a class="btn btn--primary" href="/files/Guillem_Lopez_Paradis_CV.pdf"><i class="fas fa-file-pdf"></i> Download CV</a>
     <a class="btn btn--ghost" href="/publications/"><i class="fas fa-book"></i> Publications</a>
     <a class="btn btn--ghost" href="https://scholar.google.com/citations?user=ookFZsQAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Google Scholar</a>
     <a class="btn btn--ghost" href="https://github.com/guillemlp"><i class="fab fa-github"></i> GitHub</a>
