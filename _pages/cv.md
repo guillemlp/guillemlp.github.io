@@ -10,7 +10,7 @@ redirect_from:
 
 <p class="page__lede" markdown="0">
   Computer architecture researcher (<strong>PhD, BSC–UPC, 2025, Cum Laude</strong>) working on
-  <strong>coherent accelerator integration</strong> in <strong>RISC-V manycore SoCs</strong>.
+  <strong>RISC-V CPU and SoC microarchitecture</strong>, <strong>memory systems</strong> and <strong>performance analysis</strong>.
 </p>
 
 <p class="cv-actions" markdown="0">
@@ -26,14 +26,14 @@ Experience
     <p class="cv-item__sub">Barcelona Supercomputing Center (BSC) · Barcelona, Spain</p>
     <p class="cv-item__date">Jul 2025 – Present</p>
     <ul class="cv-item__bullets">
-      <li>Advising a PhD student and managing a team of 4 (BSc, MSc, PhD, RE); coordinating collaborations with <strong>UCSB</strong> and <strong>PoliMilano</strong>.</li>
-      <li><strong>Technical lead</strong> at BSC for <strong>WP6</strong> of the EU project <strong>ODE4EC</strong> on open-source EDA tools.</li>
-      <li><strong>TMU sparse accelerator:</strong> leading a student team implementing the TMU-based SpMV accelerator in RTL with the <strong>Arm CoE</strong>; 2–3× over CPU software (RTL simulation).</li>
-      <li><strong>Hardware scheduler queues:</strong> designing RTL for hardware-assisted task scheduling over OpenPiton's NoCs; validated on FPGA and in RTL simulation.</li>
-      <li><strong>Accelerator-rich SoC:</strong> designed the MPMC HW queues of a RISC-V SoC with 6 coherent accelerators (1.9–5.5× over SW) and ported it to FPGA.</li>
-      <li><strong>Performance analysis:</strong> integrated Mess and TopDown into FPGA/SoC evaluation; found and fixed NoC, cache and memory-controller bottlenecks, improving measured memory bandwidth by <strong>10×</strong>.</li>
-      <li>Co-advising a student on <strong>LLM-based hardware design</strong>: evaluating open-weight LLM agents for RTL design on the CVDP benchmark.</li>
-      <li>Leading Metro-MPI integration into <strong>Verilator</strong>, <strong>gem5</strong> and multi-FPGA emulation; co-advised a summer intern (with UCSB) on UBQ.</li>
+      <li><strong>Performance analysis:</strong> integrated Mess and TopDown into FPGA/SoC evaluation workflows; identified and resolved NoC, cache and memory-controller bottlenecks, improving measured memory bandwidth by <strong>10×</strong>.</li>
+      <li><strong>512-bit vector unit:</strong> extended Sargantana's vector unit to VLEN=512, redesigning its permute, reduction and multiply datapaths to cut LUTs by <strong>50%</strong> (915k to 454k); a full Sargantana core with the 512-bit unit now fits on one FPGA.</li>
+      <li><strong>Hardware scheduler queues:</strong> designing RTL for hardware task scheduling over OpenPiton's NoCs; validated on FPGA and in RTL simulation.</li>
+      <li><strong>CPU-accelerator SoC:</strong> designed MPMC HW queues for a RISC-V SoC with 6 coherent accelerators (1.9–5.5× speedup over SW); ported to FPGA.</li>
+      <li><strong>TMU sparse accelerator:</strong> leading a student team on the SpMV accelerator RTL with the <strong>Arm CoE</strong>; 2–3× speedup over CPU software (RTL simulation).</li>
+      <li><strong>AI-assisted hardware design:</strong> co-advising a student evaluating open-weight LLM agents for RTL design on the CVDP benchmark.</li>
+      <li><strong>Simulation:</strong> leading Metro-MPI integration into Verilator, gem5 and multi-FPGA emulation; co-advised a UCSB intern on UBQ.</li>
+      <li><strong>Leadership:</strong> advising a PhD student and a team of 4; BSC technical lead of WP6 (open EDA) in the EU project <strong>ODE4EC</strong>; collaborations with UCSB and PoliMilano.</li>
     </ul>
   </li>
   <li class="cv-item">
@@ -41,9 +41,10 @@ Experience
     <p class="cv-item__sub">Barcelona Supercomputing Center (BSC) · Barcelona, Spain</p>
     <p class="cv-item__date">May 2021 – Jul 2025</p>
     <ul class="cv-item__bullets">
-      <li><strong>Hardware queues for accelerators:</strong> designed MPMC queue endpoints on coherent memory for RISC-V SoCs: up to 5.9× over software in RTL and 3.9× on FPGA, with a minimal 109-LUT NoC LSU.</li>
-      <li><strong>RISC-V silicon:</strong> helped design Sargantana (added its FPU); participated in its tapeouts down to 7 nm and in OpenPiton-based ones.</li>
-      <li><strong>Metro-MPI (DATE ’23):</strong> simulation of a 10B-transistor, 1,024-core SoC; 136× faster than sequential Verilator (64 cores) with 2.5× less regression energy.</li>
+      <li><strong>RISC-V CPU silicon:</strong> helped design the Sargantana core (added its FPU); took part in its tapeouts down to 7 nm and in OpenPiton-based ones.</li>
+      <li><strong>Hardware queues for accelerators:</strong> designed MPMC queue endpoints on coherent memory for RISC-V SoCs: up to 5.9× speedup over software in RTL and 3.9× on FPGA, with a minimal 109-LUT NoC LSU.</li>
+      <li><strong>Metro-MPI (DATE ’23):</strong> simulation of a 10B-transistor, 1,024-core SoC; 136× faster than sequential Verilator (64 cores) with 60% lower regression energy.</li>
+      <li><strong>GenArchBench (FGCS ’24):</strong> ported genomics kernels to Arm SVE for a benchmark suite evaluated on A64FX, Graviton3, Skylake and EPYC.</li>
       <li><strong>Data Centre HyperLoops (ISCA ’24):</strong> 1.6–376× less energy and 115–646× faster than 400 Gbps optics when moving a 29 PB ML dataset.</li>
       <li>Collaborations with EU projects (EPI, DRAC, MEEP), industry (Arm CoE, Intel) and academia (UCSB, HM).</li>
     </ul>
@@ -60,19 +61,19 @@ Experience
   <li class="cv-item">
     <h3 class="cv-item__title">Google Summer of Code Mentor</h3>
     <p class="cv-item__sub">FOSSi Foundation · Remote</p>
-    <p class="cv-item__date">Summers 2025, 2026</p>
+    <p class="cv-item__date">Summers 2025 and 2026</p>
     <ul class="cv-item__bullets">
       <li><strong>2026:</strong> Spike-based Linux checkpointing for RTL simulation and emulation.</li>
       <li><strong>2025:</strong> integrating the Metro-MPI partitioning automation into Verilator (paper accepted at DATE ’27).</li>
     </ul>
   </li>
   <li class="cv-item">
-    <h3 class="cv-item__title">Research Master Student</h3>
+    <h3 class="cv-item__title">Master's Research Student</h3>
     <p class="cv-item__sub">Barcelona Supercomputing Center (BSC) · Barcelona, Spain</p>
     <p class="cv-item__date">Mar 2018 – Apr 2021</p>
     <ul class="cv-item__bullets">
       <li>MSc thesis: <em>Towards the Simulation and Emulation of Large-Scale Hardware Designs</em>.</li>
-      <li>Designed the <strong>gem5+RTL</strong> framework (ICPP ’21), enabling co-simulation of RTL accelerators inside a full-system simulator.</li>
+      <li>Designed <strong>gem5+RTL</strong> (ICPP ’21): RTL models inside gem5 full-system simulation for CPU-accelerator architecture studies.</li>
       <li>Engineered NoC tracing for Mont-Blanc 2020, enabling on-chip interconnect analysis of Exascale-ready processors (DATE ’21).</li>
       <li>Awarded the <strong>Nacho Navarro Grant</strong>, given to the top 2 students in the HPC track.</li>
     </ul>
@@ -176,7 +177,7 @@ Awards &amp; Achievements
 
 * **DAC Young Fellow** (2023)
 * **2nd place**, *PhD Thesis in 4 Minutes* communication contest, UPC (2024)
-* ~**€107,000** in competitive grants at undergraduate, master and PhD level (2016 – present), including the Beca de Colaboración (2017)
+* ~**€107,000** in competitive grants during BSc, MSc and PhD studies (2016 – present), including the Beca de Colaboración (2017)
 * **Google Summer of Code:** student twice (17% and 27% acceptance rates) and mentor twice (2018 – 2026)
 * **15+ hackathons**, including the GitHub Octocat Prize and 3rd place at Hack the Burgh (2018); helped organise HackUPC, Europe's largest student hackathon
 * **Start-ups:** led bike–app HW/SW integration at the e-bike start-up Forestal; accepted into Santander's YUZZ programme for young entrepreneurs
@@ -185,14 +186,16 @@ Skills
 ======
 
 <dl class="skills" markdown="0">
-  <dt>Hardware</dt>
-  <dd>gem5, Ramulator, Verilator, Vivado, ModelSim, VCS · SystemVerilog, VHDL, HLS, FPGAs</dd>
+  <dt>Architecture</dt>
+  <dd>RISC-V CPU microarchitecture, cache hierarchy &amp; coherence, memory systems, SIMD/vector units (up to 512 bits), NoCs, CPU-accelerator integration, HW queues &amp; scheduling</dd>
+  <dt>Performance</dt>
+  <dd>TopDown bottleneck analysis, memory bandwidth/latency characterisation (Mess), performance modelling</dd>
+  <dt>Simulation</dt>
+  <dd>gem5 (full-system), Ramulator, TaskSim, Verilator, VCS, ModelSim, Metro-MPI (parallel RTL simulation)</dd>
+  <dt>RTL &amp; prototyping</dt>
+  <dd>SystemVerilog, VHDL, HLS, FPGA prototyping (Vivado, Alveo), silicon tapeouts (down to 7 nm)</dd>
   <dt>Software</dt>
-  <dd>C/C++ (expert), Python (NumPy, Matplotlib), OpenMP, MPI, Linux kernel/drivers, GitLab CI/CD</dd>
-  <dt>Domains</dt>
-  <dd>SoC architecture, coherent accelerator integration, memory hierarchy &amp; coherence, NoCs, RISC-V manycores, HW/SW co-design</dd>
-  <dt>Methods</dt>
-  <dd>RTL microarchitecture, performance profiling, FPGA prototyping, performance modelling &amp; analysis</dd>
+  <dd>C/C++ (expert), Arm SVE intrinsics, Python (NumPy, Matplotlib), OpenMP, MPI, Linux kernel/drivers, GitLab CI/CD</dd>
   <dt>Languages</dt>
   <dd>Catalan and Spanish (native), English (fluent, C1), French (A1)</dd>
   <dt>Interests</dt>

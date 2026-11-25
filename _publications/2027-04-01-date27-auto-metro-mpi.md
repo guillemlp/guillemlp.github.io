@@ -1,5 +1,5 @@
 ---
-title: "Automated Metro-MPI Partitioning in Verilator"
+title: "Automatic Partitioning towards Faster Parallel RTL Simulations with Repeated Modules via MPI"
 collection: publications
 permalink: /publication/2027-04-01-date27-auto-metro-mpi
 excerpt: 'Brings Metro-MPI partitioning into Verilator itself, so large RTL designs can be split into parallel MPI simulations automatically. Outcome of a Google Summer of Code 2025 project I mentored.'

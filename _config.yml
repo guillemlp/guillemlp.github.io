@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Guillem López Paradís"
 title_separator          : "-"
 name                     : &name "Guillem López Paradís"
-description              : &description "Computer architecture researcher at BSC — SoC architecture, coherent accelerator integration in RISC-V manycores, and large-scale RTL simulation (Metro-MPI)"
+description              : &description "Computer architecture researcher at BSC — RISC-V CPU and SoC microarchitecture, memory systems, accelerator integration, and large-scale RTL simulation (Metro-MPI)"
 url                      : https://guillemlp.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "guillemlp/guillemlp.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Guillem López Paradís"
   avatar           : "profile.jpg"
-  bio              : "Postdoc & research lead at BSC. SoC architecture, coherent accelerators for RISC-V manycores, RTL simulation at scale."
+  bio              : "Postdoc & research lead at BSC. RISC-V CPU/SoC microarchitecture, memory systems, accelerators, RTL simulation at scale."
   location         : "Barcelona, Spain"
   employer         : "Barcelona Supercomputing Center (BSC)"
   pubmed           :

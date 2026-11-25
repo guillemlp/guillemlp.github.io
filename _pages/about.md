@@ -11,8 +11,8 @@ redirect_from:
 <section class="hero" markdown="0">
   <p class="hero__eyebrow">Computer Architecture Researcher · BSC</p>
   <h1 class="hero__name">Guillem López Paradís</h1>
-  <p class="hero__tagline">SoC architecture, coherent accelerator integration, and RISC-V manycores.</p>
-  <p class="hero__lede">Postdoctoral researcher and research lead at the Barcelona Supercomputing Center (BSC). I design RTL microarchitecture for accelerator-rich RISC-V SoCs, take it to silicon and FPGA, and build the simulation tooling that makes billion-transistor designs tractable.</p>
+  <p class="hero__tagline">RISC-V CPU and SoC microarchitecture, memory systems, and accelerator integration.</p>
+  <p class="hero__lede">Postdoctoral researcher and research lead at the Barcelona Supercomputing Center (BSC). I design RTL microarchitecture for RISC-V cores and accelerator-rich SoCs, take it to silicon and FPGA, analyse performance with TopDown and memory-bandwidth studies, and build the simulation tooling that makes billion-transistor designs tractable.</p>
   <p class="hero__cta">
     <a class="btn btn--primary" href="/files/Guillem_Lopez_Paradis_CV.pdf"><i class="fas fa-file-pdf"></i> Download CV</a>
     <a class="btn btn--ghost" href="/publications/"><i class="fas fa-book"></i> Publications</a>
@@ -28,7 +28,7 @@ redirect_from:
   </li>
   <li class="stat">
     <span class="stat__num">5.9×</span>
-    <span class="stat__label">over software with MPMC hardware queues on coherent memory</span>
+    <span class="stat__label">speedup over software with MPMC hardware queues on coherent memory</span>
   </li>
   <li class="stat">
     <span class="stat__num">7&nbsp;nm</span>
@@ -43,9 +43,9 @@ redirect_from:
 About me
 ======
 
-I am a computer architecture researcher at the Barcelona Supercomputing Center (BSC), working on **coherent accelerator integration in RISC-V manycore SoCs**. I received my PhD in Computer Architecture (**Cum Laude**) from BSC–UPC in July 2025, with a thesis on *Efficient Data Movement in Large-Scale Heterogeneous Systems*, advised by Adrià Armejach and Miquel Moretó.
+I am a computer architecture researcher at the Barcelona Supercomputing Center (BSC), working on **RISC-V CPU and SoC microarchitecture**, **memory systems** and **performance analysis**. I received my PhD in Computer Architecture (**Cum Laude**) from BSC–UPC in July 2025, with a thesis on *Efficient Data Movement in Large-Scale Heterogeneous Systems*, advised by Adrià Armejach and Miquel Moretó.
 
-I design RTL microarchitecture (the Sargantana core's FPU, MPMC hardware queue endpoints, hardware scheduler queues), have contributed to **RISC-V tapeouts down to 7 nm**, and evaluate designs on FPGA and in large-scale RTL simulation with [Metro-MPI](/publication/2023-04-01-date23). I spent two research stays at **UC Santa Barbara**, where I co-developed [Data Centre HyperLoops](/publication/2024-06-01-hyperloops) (ISCA ’24).
+I design RTL microarchitecture (the Sargantana core's FPU and its **512-bit vector unit**, MPMC hardware queue endpoints, hardware scheduler queues), have contributed to **RISC-V tapeouts down to 7 nm**, and evaluate designs with TopDown, gem5, FPGA prototypes and large-scale RTL simulation with [Metro-MPI](/publication/2023-04-01-date23). I spent two research stays at **UC Santa Barbara**, where I co-developed [Data Centre HyperLoops](/publication/2024-06-01-hyperloops) (ISCA ’24).
 
 Today I lead a team of four at BSC. I am BSC's **technical lead for WP6 of the EU project ODE4EC** on open-source EDA tools, lead a student team building the **TMU sparse accelerator** with the **Arm CoE**, and coordinate collaborations with **UCSB** and **Politecnico di Milano**.
 
@@ -56,13 +56,13 @@ What I work on
   <li class="card">
     <span class="card__icon"><i class="fas fa-project-diagram"></i></span>
     <h3 class="card__title">Coherent accelerator integration</h3>
-    <p class="card__desc">MPMC hardware queues on coherent memory for RISC-V SoCs: up to 5.9× over software in RTL and 3.9× on FPGA, with a 109-LUT NoC load/store unit. Applied to an SoC with six coherent accelerators.</p>
+    <p class="card__desc">MPMC hardware queues on coherent memory for RISC-V SoCs: up to 5.9× speedup over software in RTL and 3.9× on FPGA, with a 109-LUT NoC load/store unit. Applied to an SoC with six coherent accelerators.</p>
     <p class="card__meta"><a href="/publication/2023-07-01-samos23">SAMOS ’23</a></p>
   </li>
   <li class="card">
     <span class="card__icon"><i class="fas fa-microchip"></i></span>
-    <h3 class="card__title">RISC-V silicon &amp; manycores</h3>
-    <p class="card__desc">Sargantana core (I added its FPU) and its tapeouts down to 7 nm; OpenPiton-based manycores, on-chip data movement, and hardware scheduler queues over the NoC.</p>
+    <h3 class="card__title">RISC-V cores &amp; silicon</h3>
+    <p class="card__desc">Sargantana core (I added its FPU) and its tapeouts down to 7 nm. I extended its vector unit to 512 bits, redesigning the permute, reduction and multiply datapaths to cut LUTs by 50% so a full core fits on one FPGA. Also OpenPiton-based manycores and hardware scheduler queues over the NoC.</p>
     <p class="card__meta"><a href="/publication/2022-08-01-sargantana-dsd">DSD ’22</a> · <a href="/publication/2024-07-01-openpiton4hpc">JETCAS ’24</a></p>
   </li>
   <li class="card">
@@ -93,7 +93,7 @@ News
   </li>
   <li class="news__item">
     <span class="news__date">2026</span>
-    <span class="news__text"><a href="/publication/2027-04-01-date27-auto-metro-mpi">Automated Metro-MPI Partitioning in Verilator</a> accepted at <strong>DATE ’27</strong>, the outcome of my GSoC 2025 mentoring project.</span>
+    <span class="news__text"><a href="/publication/2027-04-01-date27-auto-metro-mpi">Automatic Partitioning towards Faster Parallel RTL Simulations with Repeated Modules via MPI</a> accepted at <strong>DATE ’27</strong>, the outcome of my GSoC 2025 mentoring project.</span>
   </li>
   <li class="news__item">
     <span class="news__date">Jul 2025</span>
@@ -112,4 +112,4 @@ News
 Get in touch
 ======
 
-The fastest way to reach me is by [email](mailto:guillem.lopez.paradis@gmail.com). I am open to collaborations on accelerator integration, RISC-V SoC design, RTL simulation and open EDA, and to research and engineering roles in computer architecture. You can also find me on [Google Scholar](https://scholar.google.com/citations?user=ookFZsQAAAAJ&hl=en), [GitHub](https://github.com/guillemlp), [LinkedIn](https://www.linkedin.com/in/guillemlopezparadis/) and [ORCID](https://orcid.org/0000-0002-5323-0761).
+The fastest way to reach me is by [email](mailto:guillem.lopez.paradis@gmail.com). I am open to collaborations on CPU and SoC microarchitecture, memory systems, accelerator integration, RTL simulation and open EDA, and to research and engineering roles in computer architecture. You can also find me on [Google Scholar](https://scholar.google.com/citations?user=ookFZsQAAAAJ&hl=en), [GitHub](https://github.com/guillemlp), [LinkedIn](https://www.linkedin.com/in/guillemlopezparadis/) and [ORCID](https://orcid.org/0000-0002-5323-0761).
