@@ -33,7 +33,7 @@ Experience
       <li><strong>TMU sparse accelerator:</strong> leading a student team on the SpMV accelerator RTL with the <strong>Arm CoE</strong>; now prototyped on FPGA.</li>
       <li><strong>AI-assisted hardware design:</strong> co-advising a student evaluating open-weight LLM agents for RTL design on the CVDP benchmark.</li>
       <li><strong>Simulation:</strong> leading Metro-MPI integration into Verilator, gem5 and multi-FPGA emulation.</li>
-      <li><strong>Leadership:</strong> advising a PhD student and a team of 4; <strong>ODE4EC</strong> WP6 technical lead (EU, open EDA); collaborations with UCSB and PoliMilano.</li>
+      <li><strong>Leadership:</strong> advising a PhD student and a team of 4; co-advised a UCSB intern; <strong>ODE4EC</strong> WP6 technical lead (EU, open EDA); collaborations with UCSB and PoliMilano.</li>
     </ul>
   </li>
   <li class="cv-item">
@@ -195,7 +195,7 @@ Skills
   <dt>RTL &amp; prototyping</dt>
   <dd>SystemVerilog, VHDL, HLS, FPGA prototyping (Vivado, Alveo), silicon tapeouts (down to 7 nm)</dd>
   <dt>Software</dt>
-  <dd>C/C++ (expert), Arm SVE intrinsics, Python (NumPy, Matplotlib), OpenMP, MPI, Linux kernel/drivers, GitLab CI/CD</dd>
+  <dd>C/C++ (expert), Python (NumPy, Matplotlib), OpenMP, MPI, Linux kernel/drivers, GitLab CI/CD</dd>
   <dt>Languages</dt>
   <dd>Catalan and Spanish (native), English (fluent, C1), French (A1)</dd>
   <dt>Interests</dt>
