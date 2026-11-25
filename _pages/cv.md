@@ -29,7 +29,7 @@ Experience
       <li><strong>Performance analysis:</strong> integrated Mess and TopDown into FPGA/SoC evaluation workflows; identified and resolved NoC, cache and memory-controller bottlenecks, improving measured memory bandwidth by <strong>10×</strong>.</li>
       <li><strong>512-bit vector unit:</strong> extended Sargantana's vector unit to VLEN=512, redesigning its permute, reduction and multiply datapaths to cut LUTs by <strong>50%</strong> (915k to 454k); a full Sargantana core with the 512-bit unit now fits on one FPGA.</li>
       <li><strong>Hardware scheduler queues:</strong> designing RTL for hardware task scheduling over OpenPiton's NoCs; validated on FPGA and in RTL simulation.</li>
-      <li><strong>CPU-accelerator SoC:</strong> designed MPMC HW queues for RISC-V SoCs with up to 96 coherent accelerators; a 6-accelerator SoC achieves 1.9–5.5× speedup over SW and runs on FPGA.</li>
+      <li><strong>CPU-accelerator SoC:</strong> designed MPMC HW queue endpoints for RISC-V SoCs with up to 96 coherent accelerator tiles; up to 2× faster than SW endpoints with ≤8 workers, in RTL simulation and on a 16-tile FPGA.</li>
       <li><strong>TMU sparse accelerator:</strong> leading a student team on the SpMV accelerator RTL with the <strong>Arm CoE</strong>; now prototyped on FPGA.</li>
       <li><strong>AI-assisted hardware design:</strong> co-advising a student evaluating open-weight LLM agents for RTL design on the CVDP benchmark.</li>
       <li><strong>Simulation:</strong> leading Metro-MPI integration into Verilator, gem5 and multi-FPGA emulation.</li>
