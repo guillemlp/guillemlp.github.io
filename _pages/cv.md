@@ -29,11 +29,11 @@ Experience
       <li><strong>Performance analysis:</strong> integrated Mess and TopDown into FPGA/SoC evaluation workflows; identified and resolved NoC, cache and memory-controller bottlenecks, improving measured memory bandwidth by <strong>10×</strong>.</li>
       <li><strong>512-bit vector unit:</strong> extended Sargantana's vector unit to VLEN=512, redesigning its permute, reduction and multiply datapaths to cut LUTs by <strong>50%</strong> (915k to 454k); a full Sargantana core with the 512-bit unit now fits on one FPGA.</li>
       <li><strong>Hardware scheduler queues:</strong> designing RTL for hardware task scheduling over OpenPiton's NoCs; validated on FPGA and in RTL simulation.</li>
-      <li><strong>CPU-accelerator SoC:</strong> designed MPMC HW queues for a RISC-V SoC with 6 coherent accelerators (1.9–5.5× speedup over SW); ported to FPGA.</li>
-      <li><strong>TMU sparse accelerator:</strong> leading a student team on the SpMV accelerator RTL with the <strong>Arm CoE</strong>; 2–3× speedup over CPU software (RTL simulation).</li>
+      <li><strong>CPU-accelerator SoC:</strong> designed MPMC HW queues for a RISC-V SoC with up to 96 coherent accelerators (1.9–5.5× over SW); ported to FPGA.</li>
+      <li><strong>TMU sparse accelerator:</strong> leading a student team on the SpMV accelerator RTL with the <strong>Arm CoE</strong>; now prototyped on FPGA.</li>
       <li><strong>AI-assisted hardware design:</strong> co-advising a student evaluating open-weight LLM agents for RTL design on the CVDP benchmark.</li>
-      <li><strong>Simulation:</strong> leading Metro-MPI integration into Verilator, gem5 and multi-FPGA emulation; co-advised a UCSB intern on UBQ.</li>
-      <li><strong>Leadership:</strong> advising a PhD student and a team of 4; BSC technical lead of WP6 (open EDA) in the EU project <strong>ODE4EC</strong>; collaborations with UCSB and PoliMilano.</li>
+      <li><strong>Simulation:</strong> leading Metro-MPI integration into Verilator, gem5 and multi-FPGA emulation.</li>
+      <li><strong>Leadership:</strong> advising a PhD student and a team of 4; <strong>ODE4EC</strong> WP6 technical lead (EU, open EDA); collaborations with UCSB and PoliMilano.</li>
     </ul>
   </li>
   <li class="cv-item">
@@ -44,7 +44,7 @@ Experience
       <li><strong>RISC-V CPU silicon:</strong> helped design the Sargantana core (added its FPU); took part in its tapeouts down to 7 nm and in OpenPiton-based ones.</li>
       <li><strong>Hardware queues for accelerators:</strong> designed MPMC queue endpoints on coherent memory for RISC-V SoCs: up to 5.9× speedup over software in RTL and 3.9× on FPGA, with a minimal 109-LUT NoC LSU.</li>
       <li><strong>Metro-MPI (DATE ’23):</strong> simulation of a 10B-transistor, 1,024-core SoC; 136× faster than sequential Verilator (64 cores) with 60% lower regression energy.</li>
-      <li><strong>GenArchBench (FGCS ’24):</strong> ported genomics kernels to Arm SVE for a benchmark suite evaluated on A64FX, Graviton3, Skylake and EPYC.</li>
+      <li><strong>GenArchBench (FGCS ’24):</strong> helped port a genomics kernel to Arm SVE for a benchmark suite evaluated on A64FX, Graviton3, Skylake and EPYC.</li>
       <li><strong>Data Centre HyperLoops (ISCA ’24):</strong> 1.6–376× less energy and 115–646× faster than 400 Gbps optics when moving a 29 PB ML dataset.</li>
       <li>Collaborations with EU projects (EPI, DRAC, MEEP), industry (Arm CoE, Intel) and academia (UCSB, HM).</li>
     </ul>

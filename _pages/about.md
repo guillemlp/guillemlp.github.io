@@ -56,7 +56,7 @@ What I work on
   <li class="card">
     <span class="card__icon"><i class="fas fa-project-diagram"></i></span>
     <h3 class="card__title">Coherent accelerator integration</h3>
-    <p class="card__desc">MPMC hardware queues on coherent memory for RISC-V SoCs: up to 5.9× speedup over software in RTL and 3.9× on FPGA, with a 109-LUT NoC load/store unit. Applied to an SoC with six coherent accelerators.</p>
+    <p class="card__desc">MPMC hardware queues on coherent memory for RISC-V SoCs: up to 5.9× speedup over software in RTL and 3.9× on FPGA, with a 109-LUT NoC load/store unit. Applied to SoCs with up to 96 coherent accelerators.</p>
     <p class="card__meta"><a href="/publication/2023-07-01-samos23">SAMOS ’23</a></p>
   </li>
   <li class="card">
